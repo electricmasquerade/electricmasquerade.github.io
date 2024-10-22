@@ -1,52 +1,77 @@
-/* General styles */
+/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
     margin: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* Header styling */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 2rem 0;
     text-align: center;
+    padding: 2rem 0;
+    color: #00ffcc; /* Neon greenish blue */
+    background-color: #101010; /* Dark background for header */
+}
+
+/* Banner styling */
+.banner {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-bottom: 4px solid #00ffcc;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
 }
 
-header nav ul {
-    list-style-type: none;
+header p {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav ul li {
+    display: inline-block;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li a {
+    color: #00ffcc;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
-/* Main section styling */
-main {
-    padding: 2rem;
+nav ul li a:hover {
+    color: #ff00cc; /* Pinkish neon on hover */
 }
 
-/* Section headers */
+/* Section Styling */
+section {
+    padding: 3rem;
+    text-align: center;
+}
+
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
 }
 
-/* Project Grid */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -54,24 +79,21 @@ h2 {
 }
 
 .project-card {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #1a1a1a;
     padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 .project-card h3 {
-    margin-top: 0;
-    color: #4CAF50;
+    color: #ff00cc;
 }
 
 /* Footer styling */
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #101010;
+    color: #e0e0e0;
 }
