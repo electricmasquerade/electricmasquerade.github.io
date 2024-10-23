@@ -138,6 +138,48 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+/* Hide the menu by default for mobile */
+/* Normal desktop navbar styling */
+nav ul {
+    display: flex; /* Keep the menu visible as a horizontal flexbox on desktop */
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+/* Style for the hamburger icon */
+.hamburger {
+    display: none; /* Hidden on desktop */
+    font-size: 2rem;
+    cursor: pointer;
+    color: #00ffcc;
+    position: absolute;
+    left: 20px; /* Adjust the value to control how far from the left edge */
+    top: 15px; /* Adjust the value to position vertically */
+}
+
+/* Show the hamburger icon for screens smaller than 768px */
+/* Hide the menu by default for mobile (screens less than 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide menu for mobile by default */
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon only on mobile */
+        font-size: 2rem;
+        cursor: pointer;
+        color: #00ffcc;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu when hamburger is clicked on mobile */
+    }
+}
 
 /* Mobile-first approach for all sections */
 @media (max-width: 768px) {
@@ -176,5 +218,12 @@ html {
 
     footer p {
         font-size: 0.9rem;
+    }
+    nav {
+        position: relative; /* Ensure the hamburger icon is positioned relative to the nav */
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger icon on mobile */
     }
 }
