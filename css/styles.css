@@ -97,3 +97,24 @@ footer {
     background-color: #101010;
     color: #e0e0e0;
 }
+
+/* Social Links Styling */
+.social-links {
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    color: #00ffcc; /* Neon greenish blue */
+    font-size: 2rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff00cc; /* Pinkish neon hover */
+}
+
+.social-links i {
+    margin-right: 0.5rem;
+}
