@@ -35,7 +35,6 @@ header p {
 }
 
 /* Navigation styling */
-
 nav {
     position: sticky;
     top: 0;
@@ -63,8 +62,6 @@ nav ul li a {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
-
-
 
 nav ul li a:hover {
     color: #ff00cc; /* Pinkish neon on hover */
@@ -138,6 +135,7 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 /* Hide the menu by default for mobile */
 /* Normal desktop navbar styling */
 nav ul {
@@ -146,6 +144,13 @@ nav ul {
     justify-content: center;
     gap: 2rem;
     list-style: none;
+}
+
+.project-card:hover {
+    background-color: #333;
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px #00ffcc; /* Glowing effect */
 }
 
 /* Style for the hamburger icon */
@@ -160,8 +165,7 @@ nav ul {
     z-index: 1000; /* Make sure it's above other elements */
 }
 
-/* Show the hamburger icon for screens smaller than 768px */
-/* Hide the menu by default for mobile (screens less than 768px) */
+/* Mobile-first approach for all sections */
 @media (max-width: 768px) {
     nav ul {
         display: none; /* Hide menu for mobile by default */
@@ -180,10 +184,7 @@ nav ul {
     nav ul.active {
         display: flex; /* Show menu when hamburger is clicked on mobile */
     }
-}
 
-/* Mobile-first approach for all sections */
-@media (max-width: 768px) {
     header h1 {
         font-size: 1.8rem;
     }
@@ -220,6 +221,7 @@ nav ul {
     footer p {
         font-size: 0.9rem;
     }
+
     nav {
         position: relative; /* Ensure the hamburger icon is positioned relative to the nav */
     }

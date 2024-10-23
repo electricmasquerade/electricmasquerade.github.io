@@ -10,7 +10,7 @@
     <!-- Open Graph for social media sharing -->
     <meta property="og:title" content="Electric Masquerade - 3D Printing & Game Development Portfolio">
     <meta property="og:description" content="Explore my projects in 3D printing, Blender animation, and game development.">
-    <meta property="og:image" content="images/banner.png"> <!-- Link to your banner or another image -->
+    <meta property="og:image" content="images/banner.webp"> <!-- Link to your banner or another image -->
     <meta property="og:url" content="https://electric-masquerade.github.io/">
     <meta property="og:type" content="website">
     <title>Electric Masquerade - Portfolio</title>
@@ -23,7 +23,6 @@
 
     <!-- Link to CSS file -->
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Portfolio of Electric Masquerade, showcasing 3D printing, Blender animation, and game development projects.">
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -36,18 +35,13 @@
   gtag('config', 'G-FGDFS9LSP5');
 </script>
 
-<script>
-    function toggleMenu() {
-        const navMenu = document.querySelector("nav ul");
-        navMenu.classList.toggle("active"); /* Show/Hide the menu */
-    }
-</script>
+<script src="js/scripts.js"></script> <!-- Moved inline script to external file -->
 
 <body>
     <header>
         <img src="images/banner.png" alt="Banner Image" class="banner">
         <nav>
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
+        <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</div> <!-- Hamburger icon -->
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
@@ -60,8 +54,6 @@
     </header>
 
     <main>
-
-
         <section id="about-me">
             <h2>About Me</h2>
             <p>I’m a passionate mechanical engineer, game developer, and teacher, exploring different aspects of design and programming.</p>
@@ -82,23 +74,23 @@
         </section>
 
         <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Check me out on these platforms:</p>
-    <div class="social-links">
-        <a href="https://www.instagram.com/electric_masquerade" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://electric-masquerade.itch.io/" target="_blank">
-            <i class="fas fa-gamepad"></i>
-        </a>
-        <a href = "https://github.com/electricmasquerade" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href = "https://www.printables.com/@stevesknees_228662" target="_blank">
-            <i class="fas fa-cubes"></i>
-        </a>
-    </div>
-</section>
+            <h2>Contact Me</h2>
+            <p>Check me out on these platforms:</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/electric_masquerade" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://electric-masquerade.itch.io/" target="_blank" aria-label="Itch.io">
+                    <i class="fas fa-gamepad"></i>
+                </a>
+                <a href = "https://github.com/electricmasquerade" target="_blank" aria-label="Github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href = "https://www.printables.com/@stevesknees_228662" target="_blank" aria-label="Printables">
+                    <i class="fas fa-cubes"></i>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
