@@ -154,9 +154,10 @@ nav ul {
     font-size: 2rem;
     cursor: pointer;
     color: #00ffcc;
-    position: absolute;
+    position: fixed;
     left: 20px; /* Adjust the value to control how far from the left edge */
     top: 15px; /* Adjust the value to position vertically */
+    z-index: 1000; /* Make sure it's above other elements */
 }
 
 /* Show the hamburger icon for screens smaller than 768px */
