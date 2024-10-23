@@ -130,11 +130,51 @@ footer {
     margin-right: 0.5rem;
 }
 
+/* Ensure full responsiveness across all screen sizes */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Mobile-first approach for all sections */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .banner {
+        max-height: 200px; /* Reduce banner height for mobile */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 1rem;
+    }
+
+    section {
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
     .project-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column for projects on small screens */
+    }
+
+    .social-links a {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
     }
 }
