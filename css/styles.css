@@ -35,6 +35,15 @@ header p {
 }
 
 /* Navigation styling */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #101010;
+    z-index: 100;
+    padding: 10px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
