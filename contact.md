@@ -2,6 +2,7 @@
 layout: default
 title: Contact Me
 description: Connect with Electric Masquerade via Instagram, Itch.io, GitHub, and more.
+permalink: /contact/
 ---
 
 <section id="contact-content">
