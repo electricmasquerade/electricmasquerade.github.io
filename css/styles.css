@@ -95,9 +95,13 @@ h2 {
 }
 
 /* General link styling */
-a {
+a:link {
     color: #00ffcc; /* Neon greenish blue */
     text-decoration: none;
+}
+
+a:visited {
+    color: #8c00ff; /* Neon greenish blue */
 }
 
 a:hover {
