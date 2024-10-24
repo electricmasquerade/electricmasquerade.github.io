@@ -98,6 +98,18 @@ h2 {
     color: #ff00cc;
 }
 
+/* Ensure link styling inside the project cards */
+.project-card a {
+    color: #00ffcc; /* Neon greenish blue to match the theme */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: #ff00cc; /* Pink on hover */
+    text-decoration: underline;
+}
+
 /* Footer styling */
 footer {
     text-align: center;
