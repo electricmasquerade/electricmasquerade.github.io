@@ -2,6 +2,7 @@
 layout: default
 title: Projects
 description: Explore the latest projects from Electric Masquerade, including 3D printing and game development.
+permalink: /projects/
 ---
 
 <section id="projects-content">

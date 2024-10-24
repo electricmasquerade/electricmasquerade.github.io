@@ -2,6 +2,7 @@
 layout: default
 title: About Me
 description: Learn more about Electric Masquerade and their journey into 3D printing, Blender animation, and game development.
+permalink: /about/
 ---
 
 <section id="about-me-content">
