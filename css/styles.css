@@ -94,21 +94,6 @@ h2 {
     color: white;
 }
 
-/* General link styling */
-a:link {
-    color: #00ffcc; /* Neon greenish blue */
-    text-decoration: none;
-}
-
-a:visited {
-    color: #8c00ff; /* Neon greenish blue */
-}
-
-a:hover {
-    color: #ff00cc; /* Pinkish hover effect */
-    text-decoration: underline;
-}
-
 .project-card h3 {
     color: #ff00cc;
 }
