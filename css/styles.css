@@ -94,15 +94,14 @@ h2 {
     color: white;
 }
 
-/* Update link colors inside project cards */
-.project-card a {
-    color: #00ffcc; /* Neon greenish blue to match the theme */
+/* General link styling */
+a {
+    color: #00ffcc; /* Neon greenish blue */
     text-decoration: none;
-    font-weight: bold;
 }
 
-.project-card a:hover {
-    color: #ff00cc; /* Pink on hover */
+a:hover {
+    color: #ff00cc; /* Pinkish hover effect */
     text-decoration: underline;
 }
 
