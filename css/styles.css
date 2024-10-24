@@ -181,8 +181,15 @@ nav ul {
 @media (max-width: 768px) {
     nav ul {
         display: none; /* Hide menu for mobile by default */
+        position: fixed; /* Make the menu fixed to follow scrolling */
+        left: 0; /* Align it with the left side of the screen */
+        top: 50px; /* Position below the hamburger icon */
+        background-color: #101010; /* Ensure the background matches */
+        width: 100%; /* Full width for a dropdown menu look */
         flex-direction: column;
         gap: 1rem;
+        padding: 1rem;
+        z-index: 999; /* Keep above the content */
     }
 
     .hamburger {
