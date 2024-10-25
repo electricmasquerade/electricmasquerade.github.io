@@ -72,8 +72,9 @@ section {
     padding: 3rem;
     text-align: center;
 }
-/* Center the content on the 404 page */
-main {
+
+/* Center the content on the 404 page only */
+.error-page-main {
     display: flex;
     justify-content: center;
     align-items: center;
