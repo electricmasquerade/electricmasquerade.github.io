@@ -15,6 +15,16 @@ header {
     background-color: #101010; /* Dark background for header */
 }
 
+/* Blog post list */
+ul li a {
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+ul li a:hover {
+    color: #ff00cc;
+}
+
 /* Banner styling */
 .banner {
     width: 100%;
