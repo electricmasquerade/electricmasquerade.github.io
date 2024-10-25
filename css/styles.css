@@ -72,6 +72,15 @@ section {
     padding: 3rem;
     text-align: center;
 }
+/* Center the content on the 404 page */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    flex-direction: column;
+    text-align: center;
+}
 
 h2 {
     font-size: 2rem;
