@@ -191,6 +191,18 @@ nav ul {
     box-shadow: 0 0 20px #00ffcc; /* Glowing effect */
 }
 
+/* Center text and images in blog posts */
+.post-content {
+    text-align: center;
+}
+
+.post-content img {
+    max-width: 80%; /* Shrink the image to 80% of the available width */
+    height: auto;   /* Maintain aspect ratio */
+    margin: 20px auto; /* Center the image and add some spacing */
+    display: block;
+}
+
 /* Post list styling */
 .post-list {
     list-style: none;
