@@ -104,6 +104,8 @@ h2 {
     margin-bottom: 1rem;
     color: #00ffcc;
     text-shadow: 0 0 10px #00ffcc;
+    text-align: center;   /* Center the title */
+    margin-top: 40px;     /* Add space above the title */
 }
 
 .project-grid {
@@ -197,6 +199,13 @@ nav ul {
     font-size: 1.1rem;
     line-height: 1.6;
 }
+.post-content h2 {
+    font-size: 1.8rem;
+}
+
+.post-content h3 {
+    font-size: 1.5rem;
+}
 
 .post-content img {
     max-width: 80%; /* Shrink the image to 80% of the available width */
@@ -209,7 +218,8 @@ nav ul {
 .post-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 40px auto; /* Increase the margin around the updates section */
+    max-width: 80%; /* Optional: Constrain the maximum width of the section */
 }
 
 /* Fix bullet point alignment while keeping text centered */
@@ -317,6 +327,7 @@ nav ul {
 
     h2 {
         font-size: 1.5rem;
+
     }
 
     .project-grid {

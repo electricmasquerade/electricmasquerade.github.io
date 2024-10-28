@@ -4,6 +4,7 @@ title: Updates
 permalink: /updates/
 ---
 
+
 <h2>Latest Updates</h2>
 
 <ul class="post-list">
