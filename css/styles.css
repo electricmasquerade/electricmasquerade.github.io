@@ -194,6 +194,8 @@ nav ul {
 /* Center text and images in blog posts */
 .post-content {
     text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .post-content img {
