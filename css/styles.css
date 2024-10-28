@@ -210,6 +210,14 @@ nav ul {
     margin: 0;
 }
 
+/* Fix bullet point alignment while keeping text centered */
+.post-content ul {
+    text-align: left; /* Keep bullets and list items left-aligned */
+    display: inline-block; /* Allow the list to be centered as a block element */
+    margin-left: 0; /* Remove any default left margin */
+    padding-left: 20px; /* Add custom padding to the left for the bullet points */
+}
+
 .post-item {
     margin-bottom: 2rem;
     padding: 1rem;
